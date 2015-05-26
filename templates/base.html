@@ -7,23 +7,6 @@
 <link rel="shortcut icon" type="{{ FAVICON_TYPE }}" href="{{ SITEURL }}/{{ FAVICON }}" >
 <meta name="author" content="{{ AUTHOR }}">
 <meta name="copyright" content="{{ AUTHOR }}">
-<meta property="og:site_name" content="{{ SITENAME }}" />
-{% block seo %}
-<meta property="og:title" content="{{ SITENAME }}" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="{{ SITEURL }}" />
-<meta itemprop="name" content="{{ SITENAME }}" />
-<meta itemprop="url" content="{{ SITEURL }}"/>
-{% if DESCRIPTION %}
-<meta property="og:description" content="{{ DESCRIPTION }}" />
-<meta itemprop="description" content="{{ DESCRIPTION  }}" />
-{% endif %}
-{% if META_IMAGE %}
-<meta property="og:image" content="{{ META_IMAGE }}" />
-<meta property="og:image:type" content="{{ META_IMAGE_TYPE }}" />
-<meta itemprop="image" content="{{ META_IMAGE }}" />
-{% endif %}
-{% endblock %}
 <link href="{{ SITEURL }}/{{ FEED_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} ATOM Feed"/>
 <link href="{{ SITEURL }}/{{ FEED_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS Feed"/>
 <link href="{{ SITEURL }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} ATOM All Feed"/>
@@ -86,7 +69,7 @@
 
             <div class="uk-panel uk-panel-box">
                 <h3 class="uk-panel-title">Receive Updates</h3>
-                <ul class="uk-nav uk-feed ">
+                <ul class="uk-nav uk-feed">
                     <li><a rel="alternate" type="application/atom+xml" href="{{ SITEURL }}/{{ FEED_ALL_ATOM }}" class="mg-feed"><i class="uk-icon-rss uk-icon-medium"></i> ATOM</a></li>
                     <li><a rel="alternate" type="application/rss+xml" href="{{ SITEURL }}/{{ FEED_ALL_RSS }}" class="mg-feed"><i class="uk-icon-rss uk-icon-medium"></i> RSS</a></li>
                 </ul>
@@ -114,7 +97,7 @@
 <footer class="mg-footer">
     <div class="uk-container uk-container-center uk-text-center">
 
-        <div class="mg-icons-small uk-subnav uk-visible-small">
+        <ul class="mg-icons-small uk-subnav uk-visible-small">
             <li><a rel="alternate" type="application/atom+xml" href="{{ SITEURL }}/{{ FEED_ALL_ATOM }}" class="uk-icon-button uk-icon-rss"></a></li>
             {% if SOCIAL %}
             {% for icon, link in SOCIAL %}
@@ -123,7 +106,7 @@
             </li>
             {% endfor %}
             {% endif %}
-        </div>
+        </ul>
 
         <div class="mg-author uk-panel">
             <p>{{ FOOTER }}</p>
