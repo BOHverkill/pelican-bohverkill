@@ -34,6 +34,12 @@ a {
 .uk-icon-reddit {
   color: #333; }
 
+.uk-icon-twitch {
+  color: #333; }
+
+.uk-icon-hitbox {
+  color: #333; }
+
 .uk-icon-envelope {
   color: #444; }
 
@@ -70,9 +76,6 @@ a {
   border-top: 1px solid rgba(0, 0, 0, 0.3);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5); }
-
-.uk-feed {
-  margin:0 -15px;}
 
 .mg-header {
   padding: 1em 0;
@@ -144,6 +147,14 @@ a {
 .mg-icons-small .uk-icon-google-plus {
   background-color: #D34836; }
 .mg-icons-small .uk-icon-github {
+  background-color: #333; }
+.mg-icons-small .uk-icon-steam {
+  background-color: #333; }
+.mg-icons-small .uk-icon-reddit {
+  background-color: #333; }
+.mg-icons-small .uk-icon-twitch {
+  background-color: #333; }
+.mg-icons-small .uk-icon-hitbox {
   background-color: #333; }
 .mg-icons-small .uk-icon-envelope {
   background-color: #059; }

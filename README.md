@@ -7,6 +7,8 @@ A minimal theme for [Pelican](http://blog.getpelican.com/) that uses uikit.
 The theme is suited for a single author blog without tag pages nor
 blogroll. Feeds are provided via ATOM and RSS.
 
+Everything self hosted.
+
 Maybe buggy.
 
 Live Example

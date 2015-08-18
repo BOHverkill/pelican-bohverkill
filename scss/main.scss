@@ -7,6 +7,7 @@ $googleRed: #D34836;
 $githubBlack: #333;
 $steamBlack: #333;
 $redditBlack: #333;
+$twitchBlack: #333;
 $mailBlue: #059;
 $textGrey: #444;
 $ancorBase: #33b5e5;
@@ -67,6 +68,10 @@ a {
 
 .uk-icon-reddit {
     color: $redditBlack;
+}
+
+.uk-icon-twitch {
+    color: $twitchBlack;
 }
 
 .uk-icon-envelope {
@@ -234,6 +239,18 @@ a {
 
     .uk-icon-github {
         background-color: $githubBlack;
+    }
+
+    .uk-icon-steam {
+        background-color: $steamBlack;
+    }
+
+    .uk-icon-reddit {
+        background-color: $redditBlack;
+    }
+
+    .uk-icon-twitch {
+        background-color: $twitchBlack;
     }
 
     .uk-icon-envelope {

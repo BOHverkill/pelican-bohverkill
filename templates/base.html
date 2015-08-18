@@ -2,20 +2,20 @@
 <head>
 <meta charset="utf-8">
 <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
+<link rel="shortcut icon" type="{{ FAVICON_TYPE }}" href="{{ SITEURL }}/{{ FAVICON }}" >
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="{% block description %}{{ DESCRIPTION }}{% endblock %}">
-<link rel="shortcut icon" type="{{ FAVICON_TYPE }}" href="{{ SITEURL }}/{{ FAVICON }}" >
 <meta name="author" content="{{ AUTHOR }}">
 <meta name="copyright" content="{{ AUTHOR }}">
 <link href="{{ SITEURL }}/{{ FEED_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} ATOM Feed"/>
 <link href="{{ SITEURL }}/{{ FEED_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS Feed"/>
 <link href="{{ SITEURL }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} ATOM All Feed"/>
 <link href="{{ SITEURL }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS All Feed"/>
-<link href='//fonts.googleapis.com/css?family=Open+Sans:800italic' rel='stylesheet' type='text/css'>
-<link href='//fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/uikit/2.15.0/css/uikit.min.css">
-<link rel="stylesheet" href="/theme/css/solarized.css">
-<link rel="stylesheet" href="/theme/css/main.css">
+<link href="/theme/fonts/opensans.css" rel="stylesheet">
+<link href="/theme/fonts/oswald.css" rel="stylesheet">
+<link href="/theme/css/uikit.min.css" rel="stylesheet">
+<link href="/theme/css/solarized.css" rel="stylesheet">
+<link href="/theme/css/main.css" rel="stylesheet">
 
 </head>
 <body>
